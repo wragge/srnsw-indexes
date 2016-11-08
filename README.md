@@ -20,11 +20,11 @@ To harvest all the indexes you can do:
 
 ``` python
 
-    import indexes
-    indexes.get_all_indexes()
+import indexes
+indexes.get_all_indexes()
 ```
 
-To harvest an individual index, find the one you want in the indexes.csv file and copy the row. The you can do:
+To harvest an individual index, find the one you want in the [indexes.csv](data/indexes.csv) file and copy the row. The you can do:
 
 ``` python
 import harvest
@@ -39,4 +39,6 @@ harvest.get_index(["Court of Civil Jurisdiction index","http://indexes.records.n
 ```
 
 The [results of the above harvest](data/criminal-jurisdiction.csv) are in the data directory.
+
+Note that I haven't yet tested this across all indexes (some are very big). As I harvest them I'll add them to the data directory.
 
