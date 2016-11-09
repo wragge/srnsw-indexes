@@ -55,6 +55,7 @@ def get_index(index):
                 else:
                     csv_writer.writerow(get_values(row, 'td'))
             page += 1
+            time.sleep(0.2)
             nav_form = browser.get_form(id='form1')
             new_field1 = Input('<input name="__EVENTARGUMENT" value="Page${}" />'.format(page))
             nav_form.add_field(new_field1)
