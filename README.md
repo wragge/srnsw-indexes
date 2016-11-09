@@ -35,7 +35,7 @@ So for example:
 
 ``` python
 import harvest
-harvest.get_index(["Court of Civil Jurisdiction index","http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Court of Civil Jurisdiction index&id=42&frm=1&query=Plaintiff:%"])
+harvest.get_index(["Criminal Jurisdiction","http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Criminal Jurisdiction&id=57&frm=1&query=Names:%"])
 ```
 
 The [results of the above harvest](data/criminal-jurisdiction.csv) are in the data directory.
