@@ -39,6 +39,7 @@ def slugify(title):
 
 def get_index(index):
     title, url = index
+    url = url.replace('’', '%u2019')
     print title
     last_page = get_total_pages(url)
     print last_page
