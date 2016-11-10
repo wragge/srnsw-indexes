@@ -1,6 +1,6 @@
 from robobrowser import RoboBrowser
 import re
-from harvest import get_index
+from harvest import get_index, get_total_pages
 import csv
 import os
 
@@ -23,9 +23,10 @@ def list_indexes(write_csv=True):
                 indexes.append(index['href'])
     for index in indexes:
         browser.open(index)
-        form = browser.get_form(id='form1')
         text_field = browser.find('input', type='textbox')
         query = text_field['name']
+        if ' ' in query:
+            query = '[{}]'.format(query)
         table = browser.find('input', {'name': 'table'})['value']
         index_id = browser.find('input', {'name': 'id'})['value']
         url = 'http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table={}&id={}&frm=1&query={}:%'.format(table.encode('utf-8'), index_id, query)
@@ -37,11 +38,19 @@ def list_indexes(write_csv=True):
                 writer.writerow(url)
     return urls
 
-def get_all_indexes():
+
+def get_all_indexes(start=0):
     indexes = list_indexes(write_csv=False)
-    for index in indexes:
+    for index in indexes[start:]:
         get_index(index)
 
+
+def get_pages():
+    indexes = list_indexes(write_csv=False)
+    for index in indexes:
+        title, url = index
+        pages = get_total_pages(url)
+        print '{}: {}'.format(title, pages)
 
 
 

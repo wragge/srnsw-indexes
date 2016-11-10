@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from robobrowser import RoboBrowser
 from robobrowser.forms.fields import Input
 import re
@@ -5,11 +8,12 @@ import csv
 import os
 import time
 
+# javascript:__doPostBack(&#39;GridView1&#39;,&#39;Page$First&#39;)
+
 
 def get_total_pages(url):
     browser = RoboBrowser(history=True)
-    browser.open(url)
-    table = browser.find(id='GridView1')
+    browser.open(url.replace('’', '%u2019'))
     nav_form = browser.get_form(id='form1')
     new_field1 = Input('<input name="__EVENTARGUMENT" value="Page$Last" />')
     nav_form.add_field(new_field1)
@@ -34,7 +38,6 @@ def slugify(title):
 
 
 def get_index(index):
-    results = []
     title, url = index
     print title
     last_page = get_total_pages(url)
