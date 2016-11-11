@@ -4,7 +4,7 @@ This repository provides code to harvest data from the indexes published online 
 
 Copies of the harvested CSV files are available in the `data` directory.
 
-View a [list of the available indexes](https://www.records.nsw.gov.au/archives/collections-and-research/guides-and-indexes/indexes-a-z) on the SRNSW site.
+There's more [details about the available indexes](https://www.records.nsw.gov.au/archives/collections-and-research/guides-and-indexes/indexes-a-z) on the SRNSW site.
 
 ## Harvested indexes
 
