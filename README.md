@@ -72,6 +72,8 @@ View a [list of the available indexes](https://www.records.nsw.gov.au/archives/c
 
 ## Create your own harvest
 
+You'll need to have [Robobrowser](https://github.com/jmcarp/robobrowser) installed.
+
 To create a list of all the available indexes and their urls, do:
 
 
