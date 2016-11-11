@@ -98,7 +98,7 @@ To harvest an individual index, find the one you want in the [indexes.csv](data/
 
 ``` python
 import harvest
-harvest.get_index([past the row in here])
+harvest.get_index([paste the row in here])
 ```
 
 So for example:
