@@ -8,10 +8,11 @@ import csv
 import os
 import time
 
-# javascript:__doPostBack(&#39;GridView1&#39;,&#39;Page$First&#39;)
-
 
 def get_total_pages(url):
+    '''
+    Goes to the last page of results to find the total number of pages in an index.
+    '''
     browser = RoboBrowser(history=True)
     browser.open(url.replace('’', '%u2019'))
     nav_form = browser.get_form(id='form1')
@@ -27,6 +28,9 @@ def get_total_pages(url):
 
 
 def get_values(row, tag):
+    '''
+    Extracts values from an index row.
+    '''
     values = []
     for cell in row.find_all(tag):
         values.append(cell.string.replace(u'\xa0', '').encode('utf-8'))
@@ -34,10 +38,17 @@ def get_values(row, tag):
 
 
 def slugify(title):
+    '''
+    Turn index titles into a safe filename.
+    '''
     return re.sub(r'\W+', '-', title.lower())
 
 
 def get_index(index):
+    '''
+    Harvest an index.
+    Expects a list containing [index title, query url] such as created by indexes.list_indexes()
+    '''
     title, url = index
     url = url.replace('’', '%u2019')
     print title
