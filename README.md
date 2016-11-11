@@ -8,6 +8,8 @@ There's more [details about the available indexes](https://www.records.nsw.gov.a
 
 ## Harvested indexes
 
+**Currently: 58 indexes harvested with 929,104 rows of data.**
+
 | Index | Number of rows |
 |-------|----------------|
 | [Aboriginal cases](data/aboriginal-cases.csv) | 56 |

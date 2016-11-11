@@ -113,11 +113,14 @@ def check_rows():
 
 def print_details():
     indexes = sorted(check_rows())
+    total = 0
     print '| Index | Number of rows |'
     print '|-------|----------------|'
     for index in indexes:
         title, harvested, rows = index
+        total += rows
         link = 'data/{}.csv'.format(slugify(title))
         print '| [{}]({}) | {} |'.format(title, link, harvested)
+    print '{} indexes with {} rows'.format(len(indexes), total)
 
 
