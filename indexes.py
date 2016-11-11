@@ -111,6 +111,13 @@ def check_rows():
     return results
 
 
-
+def print_details():
+    indexes = sorted(check_rows())
+    print '| Index | Number of rows |'
+    print '|-------|----------------|'
+    for index in indexes:
+        title, harvested, rows = index
+        link = 'data/{}.csv'.format(slugify(title))
+        print '| [{}]({}) | {} |'.format(title, link, harvested)
 
 
