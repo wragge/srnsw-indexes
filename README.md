@@ -10,66 +10,66 @@ There's more [details about the available indexes](https://www.records.nsw.gov.a
 
 **Currently: 58 indexes harvested with 929,104 rows of data.**
 
-| Index | Number of rows |
-|-------|----------------|
-| [Aboriginal cases](data/aboriginal-cases.csv) | 56 |
-| [Applications to Marry](data/applications-to-marry.csv) | 4154 |
-| [Assisted Immigrants](data/assisted-immigrants.csv) | 191909 |
-| [Australian Railway Supply Detachment](data/australian-railway-supply-detachment.csv) | 65 |
-| [Bankruptcy Index](data/bankruptcy-index.csv) | 28880 |
-| [Bench of Magistrates cases, 1788-1820](data/bench-of-magistrates-cases-1788-1820.csv) | 4442 |
-| [CSreLand](data/csreland.csv) | 10849 |
-| [Child Care and Protection](data/child-care-and-protection.csv) | 21980 |
-| [Closer Settlement Transfer Registers, NRS 8082](data/closer-settlement-transfer-registers-nrs-8082.csv) | 4957 |
-| [Closer and Soldier Settlement Transfer Files](data/closer-and-soldier-settlement-transfer-files.csv) | 4503 |
-| [Colonial Secretary Main series of letters received,1826-1982](data/colonial-secretary-main-series-of-letters-received-1826-1982.csv) | 7638 |
-| [Convict Index](data/convict-index.csv) | 141854 |
-| [Coroners Inquests 1796-1824](data/coroners-inquests-1796-1824.csv) | 808 |
-| [Court of Civil Jurisdiction index](data/court-of-civil-jurisdiction-index.csv) | 2876 |
-| [Criminal Jurisdiction](data/criminal-jurisdiction.csv) | 5028 |
-| [Depasturing Licenses](data/depasturing-licenses.csv) | 7449 |
-| [Divorce Index](data/divorce-index.csv) | 21240 |
-| [Early Convict Index](data/early-convict-index.csv) | 12652 |
-| [FieldBooks](data/fieldbooks.csv) | 813 |
-| [Government Architect](data/government-architect.csv) | 2382 |
-| [Government Asylums for the Infirm and Destitute](data/government-asylums-for-the-infirm-and-destitute.csv) | 10264 |
-| [Governor’s Court Case Papers, 1815-1824](data/governor-s-court-case-papers-1815-1824.csv) | 3789 |
-| [Index on Occupants on Aboriginal Reserves, 1875 to 1904](data/index-on-occupants-on-aboriginal-reserves-1875-to-1904.csv) | 68 |
-| [Index to 1841 Census](data/index-to-1841-census.csv) | 9355 |
-| [Index to Closer Settlement Promotion](data/index-to-closer-settlement-promotion.csv) | 4354 |
-| [Index to Court of Claims](data/index-to-court-of-claims.csv) | 1048 |
-| [Index to Deposition Registers](data/index-to-deposition-registers.csv) | 65789 |
-| [Index to Early Probate Records](data/index-to-early-probate-records.csv) | 1627 |
-| [Index to Gaol Photographs](data/index-to-gaol-photographs.csv) | 47629 |
-| [Index to Intestate Estate Case Papers](data/index-to-intestate-estate-case-papers.csv) | 21474 |
-| [Index to Miscellaneous Immigrants](data/index-to-miscellaneous-immigrants.csv) | 8821 |
-| [Index to Quarter Sessions cases, 1824-37](data/index-to-quarter-sessions-cases-1824-37.csv) | 6232 |
-| [Index to Registers of Firms](data/index-to-registers-of-firms.csv) | 45683 |
-| [Index to Squatters and Graziers](data/index-to-squatters-and-graziers.csv) | 8981 |
-| [Index to Vessels Arrived, 1837 - 1925](data/index-to-vessels-arrived-1837-1925.csv) | 120133 |
-| [Index to convict exiles, 1846-50](data/index-to-convict-exiles-1846-50.csv) | 3036 |
-| [Index to the Unassisted Arrivals NSW 1842-1855](data/index-to-the-unassisted-arrivals-nsw-1842-1855.csv) | 136105 |
-| [Insolvency Index](data/insolvency-index.csv) | 23108 |
-| [King’s and Queen’s Counsel Appointments](data/king-s-and-queen-s-counsel-appointments.csv) | 1986 |
-| [LandGrants](data/landgrants.csv) | 5627 |
-| [List of Maps and Plans (and Supplement)](data/list-of-maps-and-plans-and-supplement-.csv) | 5871 |
-| [NSW Chemists and Druggists](data/nsw-chemists-and-druggists.csv) | 2967 |
-| [NSW Government Employees Granted Military Leave, 1914-1918](data/nsw-government-employees-granted-military-leave-1914-1918.csv) | 13735 |
-| [NSW Govt Railways and Tramways - Roll of Honour - 1914-1919](data/nsw-govt-railways-and-tramways-roll-of-honour-1914-1919.csv) | 1214 |
-| [Naturalisation](data/naturalisation.csv) | 9860 |
-| [Nominal Roll of the First Railway Section (AIF)](data/nominal-roll-of-the-first-railway-section-aif-.csv) | 435 |
-| [Publicans Licenses](data/publicans-licenses.csv) | 18457 |
-| [Railway Employment Records](data/railway-employment-records.csv) | 763 |
-| [Register of Auriferous Leases](data/register-of-auriferous-leases.csv) | 35150 |
-| [Registers of Nurses](data/registers-of-nurses.csv) | 10691 |
-| [Registers of Police](data/registers-of-police.csv) | 11319 |
-| [Registers of Settlement Purchases](data/registers-of-settlement-purchases.csv) | 9776 |
-| [Returned Soldier Settlement Loan Files](data/returned-soldier-settlement-loan-files.csv) | 7642 |
-| [Returned Soldiers Settlement Misc files 1916-25](data/returned-soldiers-settlement-misc-files-1916-25.csv) | 1052 |
-| [Schools](data/schools.csv) | 21245 |
-| [Surveyor General - Letters received 1822-55](data/surveyor-general-letters-received-1822-55.csv) | 156 |
-| [Teachers Rolls](data/teachers-rolls.csv) | 14867 |
-| [Unemployed in Sydney 1866](data/unemployed-in-sydney-1866.csv) | 3222 |
+| Name | Number of rows | Download data | View at SRNSW |
+|------|----------------|---------------|---------------|
+| Aboriginal cases | 56 | [CSV file](data/aboriginal-cases.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Aboriginal cases&id=1&frm=1&query=Names:%) |
+| Applications to Marry | 4154 | [CSV file](data/applications-to-marry.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Applications to Marry&id=68&frm=1&query=[Applicant (Male)]:%) |
+| Assisted Immigrants | 191909 | [CSV file](data/assisted-immigrants.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Assisted Immigrants&id=9&frm=1&query=Surname:%) |
+| Australian Railway Supply Detachment | 65 | [CSV file](data/australian-railway-supply-detachment.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Australian Railway Supply Detachment&id=8&frm=1&query=Surname:%) |
+| Bankruptcy Index | 28880 | [CSV file](data/bankruptcy-index.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Bankruptcy Index&id=59&frm=1&query=Surname:%) |
+| Bench of Magistrates cases, 1788-1820 | 4442 | [CSV file](data/bench-of-magistrates-cases-1788-1820.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Bench of Magistrates cases, 1788-1820&id=11&frm=1&query=Surname:%) |
+| CSreLand | 10849 | [CSV file](data/csreland.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=CSreLand&id=14&frm=1&query=Surname:%) |
+| Child Care and Protection | 21980 | [CSV file](data/child-care-and-protection.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Child Care and Protection&id=74&frm=1&query=Surname:%) |
+| Closer Settlement Transfer Registers, NRS 8082 | 4957 | [CSV file](data/closer-settlement-transfer-registers-nrs-8082.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Closer Settlement Transfer Registers, NRS 8082&id=62&frm=1&query=Surname:%) |
+| Closer and Soldier Settlement Transfer Files | 4503 | [CSV file](data/closer-and-soldier-settlement-transfer-files.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Closer and Soldier Settlement Transfer Files&id=41&frm=1&query=Surname:%) |
+| Colonial Secretary Main series of letters received,1826-1982 | 7638 | [CSV file](data/colonial-secretary-main-series-of-letters-received-1826-1982.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Colonial Secretary Main series of letters received,1826-1982&id=45&frm=1&query=Year:%) |
+| Convict Index | 141854 | [CSV file](data/convict-index.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Convict Index&id=65&frm=1&query=Surname:%) |
+| Coroners Inquests 1796-1824 | 808 | [CSV file](data/coroners-inquests-1796-1824.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Coroners Inquests 1796-1824&id=61&frm=1&query=Surname:%) |
+| Court of Civil Jurisdiction index | 2876 | [CSV file](data/court-of-civil-jurisdiction-index.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Court of Civil Jurisdiction index&id=42&frm=1&query=Plaintiff:%) |
+| Criminal Jurisdiction | 5028 | [CSV file](data/criminal-jurisdiction.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Criminal Jurisdiction&id=57&frm=1&query=Names:%) |
+| Depasturing Licenses | 7449 | [CSV file](data/depasturing-licenses.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Depasturing Licenses&id=67&frm=1&query=Surname:%) |
+| Divorce Index | 21240 | [CSV file](data/divorce-index.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Divorce Index&id=16&frm=1&query=Surname:%) |
+| Early Convict Index | 12652 | [CSV file](data/early-convict-index.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Early Convict Index&id=77&frm=1&query=Surname:%) |
+| FieldBooks | 813 | [CSV file](data/fieldbooks.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=FieldBooks&id=17&frm=1&query=Surname:%) |
+| Government Architect | 2382 | [CSV file](data/government-architect.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Government Architect&id=64&frm=1&query=Place:%) |
+| Government Asylums for the Infirm and Destitute | 10264 | [CSV file](data/government-asylums-for-the-infirm-and-destitute.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Government Asylums for the Infirm and Destitute&id=80&frm=1&query=Surname:%) |
+| Governor’s Court Case Papers, 1815-1824 | 3789 | [CSV file](data/governor-s-court-case-papers-1815-1824.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Governor’s Court Case Papers, 1815-1824&id=76&frm=1&query=Surname:%) |
+| Index on Occupants on Aboriginal Reserves, 1875 to 1904 | 68 | [CSV file](data/index-on-occupants-on-aboriginal-reserves-1875-to-1904.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index on Occupants on Aboriginal Reserves, 1875 to 1904&id=47&frm=1&query=Surname:%) |
+| Index to 1841 Census | 9355 | [CSV file](data/index-to-1841-census.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to 1841 Census&id=18&frm=1&query=Surname:%) |
+| Index to Closer Settlement Promotion | 4354 | [CSV file](data/index-to-closer-settlement-promotion.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Closer Settlement Promotion&id=60&frm=1&query=Surname:%) |
+| Index to Court of Claims | 1048 | [CSV file](data/index-to-court-of-claims.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Court of Claims&id=54&frm=1&query=Surname:%) |
+| Index to Deposition Registers | 65789 | [CSV file](data/index-to-deposition-registers.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Deposition Registers&id=40&frm=1&query=Surname:%) |
+| Index to Early Probate Records | 1627 | [CSV file](data/index-to-early-probate-records.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Early Probate Records&id=52&frm=1&query=Surname:%) |
+| Index to Gaol Photographs | 47629 | [CSV file](data/index-to-gaol-photographs.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Gaol Photographs&id=22&frm=1&query=Surname:%) |
+| Index to Intestate Estate Case Papers | 21474 | [CSV file](data/index-to-intestate-estate-case-papers.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Intestate Estate Case Papers&id=53&frm=1&query=Surname:%) |
+| Index to Miscellaneous Immigrants | 8821 | [CSV file](data/index-to-miscellaneous-immigrants.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Miscellaneous Immigrants&id=55&frm=1&query=Surname:%) |
+| Index to Quarter Sessions cases, 1824-37 | 6232 | [CSV file](data/index-to-quarter-sessions-cases-1824-37.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Quarter Sessions cases, 1824-37&id=25&frm=1&query=Surname:%) |
+| Index to Registers of Firms | 45683 | [CSV file](data/index-to-registers-of-firms.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Registers of Firms&id=48&frm=1&query=[Name of Firm]:%) |
+| Index to Squatters and Graziers | 8981 | [CSV file](data/index-to-squatters-and-graziers.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Squatters and Graziers&id=70&frm=1&query=Surname:%) |
+| Index to Vessels Arrived, 1837 - 1925 | 120133 | [CSV file](data/index-to-vessels-arrived-1837-1925.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to Vessels Arrived, 1837 - 1925&id=49&frm=1&query=[Ship Name]:%) |
+| Index to convict exiles, 1846-50 | 3036 | [CSV file](data/index-to-convict-exiles-1846-50.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to convict exiles, 1846-50&id=20&frm=1&query=Surname:%) |
+| Index to the Unassisted Arrivals NSW 1842-1855 | 136105 | [CSV file](data/index-to-the-unassisted-arrivals-nsw-1842-1855.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Index to the Unassisted Arrivals NSW 1842-1855&id=43&frm=1&query=Names:%) |
+| Insolvency Index | 23108 | [CSV file](data/insolvency-index.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Insolvency Index&id=10&frm=1&query=Surname:%) |
+| King’s and Queen’s Counsel Appointments | 1986 | [CSV file](data/king-s-and-queen-s-counsel-appointments.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=King’s and Queen’s Counsel Appointments&id=83&frm=1&query=Surname:%) |
+| LandGrants | 5627 | [CSV file](data/landgrants.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=LandGrants&id=78&frm=1&query=Surname:%) |
+| List of Maps and Plans (and Supplement) | 5871 | [CSV file](data/list-of-maps-and-plans-and-supplement-.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=List of Maps and Plans (and Supplement)&id=33&frm=1&query=[SR Item]:%) |
+| NSW Chemists and Druggists | 2967 | [CSV file](data/nsw-chemists-and-druggists.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=NSW Chemists and Druggists&id=72&frm=1&query=Surname:%) |
+| NSW Government Employees Granted Military Leave, 1914-1918 | 13735 | [CSV file](data/nsw-government-employees-granted-military-leave-1914-1918.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=NSW Government Employees Granted Military Leave, 1914-1918&id=82&frm=1&query=Surname:%) |
+| NSW Govt Railways and Tramways - Roll of Honour - 1914-1919 | 1214 | [CSV file](data/nsw-govt-railways-and-tramways-roll-of-honour-1914-1919.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=NSW Govt Railways and Tramways - Roll of Honour - 1914-1919&id=46&frm=1&query=Surname:%) |
+| Naturalisation | 9860 | [CSV file](data/naturalisation.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Naturalisation&id=30&frm=1&query=Surname:%) |
+| Nominal Roll of the First Railway Section (AIF) | 435 | [CSV file](data/nominal-roll-of-the-first-railway-section-aif-.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Nominal Roll of the First Railway Section (AIF)&id=7&frm=1&query=Surname:%) |
+| Publicans Licenses | 18457 | [CSV file](data/publicans-licenses.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Publicans Licenses&id=69&frm=1&query=Surname:%) |
+| Railway Employment Records | 763 | [CSV file](data/railway-employment-records.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Railway Employment Records&id=50&frm=1&query=Surname:%) |
+| Register of Auriferous Leases | 35150 | [CSV file](data/register-of-auriferous-leases.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Register of Auriferous Leases&id=63&frm=1&query=Surname:%) |
+| Registers of Nurses | 10691 | [CSV file](data/registers-of-nurses.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Registers of Nurses&id=79&frm=1&query=Surname:%) |
+| Registers of Police | 11319 | [CSV file](data/registers-of-police.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Registers of Police&id=31&frm=1&query=Surname:%) |
+| Registers of Settlement Purchases | 9776 | [CSV file](data/registers-of-settlement-purchases.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Registers of Settlement Purchases&id=58&frm=1&query=Surname:%) |
+| Returned Soldier Settlement Loan Files | 7642 | [CSV file](data/returned-soldier-settlement-loan-files.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Returned Soldier Settlement Loan Files&id=75&frm=1&query=Surname:%) |
+| Returned Soldiers Settlement Misc files 1916-25 | 1052 | [CSV file](data/returned-soldiers-settlement-misc-files-1916-25.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Returned Soldiers Settlement Misc files 1916-25&id=56&frm=1&query=Surname:%) |
+| Schools | 21245 | [CSV file](data/schools.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Schools&id=32&frm=1&query=School:%) |
+| Surveyor General - Letters received 1822-55 | 156 | [CSV file](data/surveyor-general-letters-received-1822-55.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Surveyor General - Letters received 1822-55&id=35&frm=1&query=Surname:%) |
+| Teachers Rolls | 14867 | [CSV file](data/teachers-rolls.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Teachers Rolls&id=73&frm=1&query=Surname:%) |
+| Unemployed in Sydney 1866 | 3222 | [CSV file](data/unemployed-in-sydney-1866.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Unemployed in Sydney 1866&id=81&frm=1&query=Surname:%) |
 
 
 ## Create your own harvest

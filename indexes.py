@@ -105,7 +105,7 @@ def check_rows():
         except IOError:
             print '{} -- not found'.format(title)
         else:
-            results.append([title, total_rows, csv_count])
+            results.append([title, url, total_rows, csv_count])
             if total_rows != csv_count:
                 print '{}: {} of {}'.format(title, csv_count, total_rows)
     return results
@@ -114,13 +114,13 @@ def check_rows():
 def print_details():
     indexes = sorted(check_rows())
     total = 0
-    print '| Index | Number of rows |'
-    print '|-------|----------------|'
+    print '| Name | Number of rows | Download data | View at SRNSW |'
+    print '|------|----------------|---------------|---------------|'
     for index in indexes:
-        title, harvested, rows = index
-        total += rows
+        title, url, rows, harvested = index
+        total += harvested
         link = 'data/{}.csv'.format(slugify(title))
-        print '| [{}]({}) | {} |'.format(title, link, harvested)
+        print '| {} | {} | [CSV file]({}) | [Web site]({}) |'.format(title, harvested, link, url)
     print '{} indexes with {} rows'.format(len(indexes), total)
 
 
