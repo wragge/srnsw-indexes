@@ -8,6 +8,8 @@ There are more [details about the available indexes](https://www.records.nsw.gov
 
 Thanks to the SRNSW staff and volunteers for preparing all this most excellent data.
 
+SRNSW content in copyright is licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0) licence](http://creativecommons.org/licenses/by/4.0/). See their [copyright page](https://www.records.nsw.gov.au/about-state-records/copyright-policy) for more information.
+
 ## Harvested indexes
 
 **Currently: 59 indexes harvested with 1,413,708 rows of data.**
