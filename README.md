@@ -1,6 +1,6 @@
 # SRNSW Index Harvester
 
-Here you'll code to harvest data from the indexes published online by State Records NSW and save them as CSV files. 
+Here you'll find code to harvest data from the indexes published online by State Records NSW and save them as CSV files. 
 
 I've pre-harvested all the current indexes for your convenience. You can browse them below, or poke around in the `data` directory. You can also download a [zip file](https://github.com/wragge/srnsw-indexes/archive/master.zip) (about 25mb) containing the complete repository
 
