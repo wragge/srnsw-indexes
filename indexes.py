@@ -119,7 +119,7 @@ def print_details():
     for index in indexes:
         title, url, rows, harvested = index
         total += harvested
-        link = 'data/{}.csv'.format(slugify(title))
+        link = 'https://github.com/wragge/srnsw-indexes/raw/master/data/{}.csv'.format(slugify(title))
         print '| {} | {} | [CSV file]({}) | [Web site]({}) |'.format(title, harvested, link, url)
     print '{} indexes with {} rows'.format(len(indexes), total)
 
