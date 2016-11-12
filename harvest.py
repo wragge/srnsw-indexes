@@ -44,7 +44,7 @@ def slugify(title):
     return re.sub(r'\W+', '-', title.lower())
 
 
-def get_index(index):
+def get_index(index, start_page=1):
     '''
     Harvest an index.
     Expects a list containing [index title, query url] such as created by indexes.list_indexes()
@@ -54,10 +54,10 @@ def get_index(index):
     print title
     last_page = get_total_pages(url)
     print last_page
-    page = 1
+    page = start_page
     browser = RoboBrowser()
     browser.open(url)
-    with open(os.path.join('data', '{}.csv'.format(slugify(title))), 'wb') as csv_file:
+    with open(os.path.join('data', '{}.csv'.format(slugify(title))), 'ab') as csv_file:
         csv_writer = csv.writer(csv_file)
         while page <= last_page:
             print page

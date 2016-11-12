@@ -10,7 +10,7 @@ Thanks to the SRNSW staff and volunteers for preparing all this most excellent d
 
 ## Harvested indexes
 
-**Currently: 58 indexes harvested with 929,104 rows of data.**
+**Currently: 59 indexes harvested with 1,413,708 rows of data.**
 
 | Name | Number of rows | Download data | View at SRNSW |
 |------|----------------|---------------|---------------|
@@ -29,6 +29,7 @@ Thanks to the SRNSW staff and volunteers for preparing all this most excellent d
 | Coroners Inquests 1796-1824 | 808 | [CSV file](https://github.com/wragge/srnsw-indexes/raw/master/data/coroners-inquests-1796-1824.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Coroners Inquests 1796-1824&id=61&frm=1&query=Surname:%) |
 | Court of Civil Jurisdiction index | 2876 | [CSV file](https://github.com/wragge/srnsw-indexes/raw/master/data/court-of-civil-jurisdiction-index.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Court of Civil Jurisdiction index&id=42&frm=1&query=Plaintiff:%) |
 | Criminal Jurisdiction | 5028 | [CSV file](https://github.com/wragge/srnsw-indexes/raw/master/data/criminal-jurisdiction.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Criminal Jurisdiction&id=57&frm=1&query=Names:%) |
+| Deceased Estates | 245642 | [CSV file](https://github.com/wragge/srnsw-indexes/raw/master/data/deceased-estates.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Deceased Estates&id=15&frm=1&query=Surname:%) |
 | Depasturing Licenses | 7449 | [CSV file](https://github.com/wragge/srnsw-indexes/raw/master/data/depasturing-licenses.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Depasturing Licenses&id=67&frm=1&query=Surname:%) |
 | Divorce Index | 21240 | [CSV file](https://github.com/wragge/srnsw-indexes/raw/master/data/divorce-index.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Divorce Index&id=16&frm=1&query=Surname:%) |
 | Early Convict Index | 12652 | [CSV file](https://github.com/wragge/srnsw-indexes/raw/master/data/early-convict-index.csv) | [Web site](http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table=Early Convict Index&id=77&frm=1&query=Surname:%) |
