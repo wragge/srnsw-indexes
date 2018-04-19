@@ -7,15 +7,11 @@ import re
 from harvest import get_index, get_total_pages, slugify
 import csv
 import os
+import requests
+from bs4 import BeautifulSoup
 
 
 def list_indexes(write_csv=True):
-    '''
-    Starts at https://www.records.nsw.gov.au/archives/collections-and-research/guides-and-indexes/indexes-a-z
-    and then moves down the hierarchy to find all the indexes.
-    It then constructs a blank search query that will actually return the index results.
-    Returns a list of [index title, query url] lists.
-    '''
     categories = []
     indexes = []
     urls = []
@@ -28,19 +24,21 @@ def list_indexes(write_csv=True):
     for category in categories:
         url = 'https://www.records.nsw.gov.au' + category
         browser.open(url)
-        for index in browser.find_all('a', class_='index'):
-            if index['href'] not in indexes and 'indexes' in index['href']:
-                indexes.append(index['href'])
+        for index in browser.find_all('a', class_='form-submit'):
+            try:
+                index_id = re.search('\?id=(\d+)', index['href']).group(1)
+            except AttributeError:
+                print('Nope')
+            else:
+                if index_id not in indexes:
+                    indexes.append(index_id)
     for index in indexes:
-        browser.open(index)
-        text_field = browser.find('input', type='textbox')
-        query = text_field['name']
-        if ' ' in query:
-            query = '[{}]'.format(query)
-        table = browser.find('input', {'name': 'table'})['value']
-        index_id = browser.find('input', {'name': 'id'})['value']
-        url = 'http://indexes.records.nsw.gov.au/searchhits_nocopy.aspx?table={}&id={}&frm=1&query={}:%'.format(table.encode('utf-8'), index_id, query)
-        urls.append([table.encode('utf-8'), url])
+        browser.open('https://www.records.nsw.gov.au/search_form?id=' + index)
+        title = browser.find('h1').string
+        form = browser.get_form(id='records-online-index-search-form')
+        form[form.keys()[0]].value = '%'
+        browser.submit_form(form)
+        urls.append([title.encode('utf-8'), browser.url])
     if write_csv:
         with open(os.path.join('data', 'indexes.csv'), 'wb') as csv_file:
             writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
@@ -83,20 +81,15 @@ def check_rows():
     browser = RoboBrowser()
     for index in indexes:
         title, url = index
-        browser.open(url.replace('’', '%u2019'))
-        nav_form = browser.get_form(id='form1')
-        new_field1 = Input('<input name="__EVENTARGUMENT" value="Page$Last" />')
-        nav_form.add_field(new_field1)
-        new_field2 = Input('<input name="__EVENTTARGET" value="GridView1" />')
-        nav_form.add_field(new_field2)
-        browser.submit_form(nav_form)
-        nav_links = browser.find_all('a', href=re.compile("javascript:__doPostBack\('GridView1','Page\$"))
-        nav_links[-1].parent.parent.next_sibling
-        last_page = nav_links[-1].parent.parent.next_sibling.string
-        table = browser.find(id='GridView1')
+        browser.open(url)
+        last_link = browser.find('a', title='Go to last page')
+        last_page = re.search('page=(\d+)', last_link['href']).group(1)
+        url = url.replace('?', '?page={}&'.format(last_page))
+        browser.open(url)
+        table = browser.find('tbody')
         rows = table.find_all('tr', recursive=False)
-        last_rows = len(rows) - 2
-        total_rows = ((int(last_page) - 1) * 20) + last_rows
+        last_rows = len(rows)
+        total_rows = (int(last_page) * 20) + last_rows
         try:
             with open(os.path.join('data', '{}.csv'.format(slugify(title))), 'rb') as csv_file:
                 reader = csv.reader(csv_file)
@@ -122,5 +115,3 @@ def print_details():
         link = 'https://github.com/wragge/srnsw-indexes/raw/master/data/{}.csv'.format(slugify(title))
         print '| {} | {} | [CSV file]({}) | [Web site]({}) |'.format(title, harvested, link, url)
     print '{} indexes with {} rows'.format(len(indexes), total)
-
-
