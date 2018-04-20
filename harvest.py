@@ -32,7 +32,7 @@ def slugify(title):
 def get_index(index, start_page=0):
     title, url = index
     page = start_page
-    browser = RoboBrowser()
+    browser = RoboBrowser(history=False)
     browser.open(url)
     last_link = browser.find('a', title='Go to last page')
     last_page = int(re.search('page=(\d+)', last_link['href']).group(1))

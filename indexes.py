@@ -2,20 +2,18 @@
 # -*- coding: utf-8 -*-
 
 from robobrowser import RoboBrowser
-from robobrowser.forms.fields import Input
 import re
-from harvest import get_index, get_total_pages, slugify
+from harvest import get_index, slugify
 import csv
 import os
-import requests
-from bs4 import BeautifulSoup
+import pandas as pd
 
 
 def list_indexes(write_csv=True):
     categories = []
     indexes = []
     urls = []
-    browser = RoboBrowser(history=True)
+    browser = RoboBrowser()
     browser.open('https://www.records.nsw.gov.au/archives/collections-and-research/guides-and-indexes/indexes-a-z')
     links = browser.find_all('a', href=re.compile('/archives/collections-and-research/guides-and-indexes/[a-z\-]+/indexes'))
     for link in links:
@@ -115,3 +113,12 @@ def print_details():
         link = 'https://github.com/wragge/srnsw-indexes/raw/master/data/{}.csv'.format(slugify(title))
         print '| {} | {} | [CSV file]({}) | [Web site]({}) |'.format(title, harvested, link, url)
     print '{} indexes with {} rows'.format(len(indexes), total)
+
+
+def clean_index(index):
+    '''
+    Remove empty columns.
+    '''
+    no_empty = lambda x: not (x.startswith('Unnamed: ') or x == 'Add to request')
+    df = pd.read_csv(index, usecols=no_empty)
+    df.to_csv(index.replace('.csv', '-cleaned.csv'), index=False)
