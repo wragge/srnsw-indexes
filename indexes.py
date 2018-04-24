@@ -82,8 +82,8 @@ def check_rows():
         browser.open(url)
         last_link = browser.find('a', title='Go to last page')
         last_page = re.search('page=(\d+)', last_link['href']).group(1)
-        url = url.replace('?', '?page={}&'.format(last_page))
-        browser.open(url)
+        last_url = url.replace('?', '?page={}&'.format(last_page))
+        browser.open(last_url)
         table = browser.find('tbody')
         rows = table.find_all('tr', recursive=False)
         last_rows = len(rows)
@@ -119,6 +119,13 @@ def clean_index(index):
     '''
     Remove empty columns.
     '''
+    print(index)
     no_empty = lambda x: not (x.startswith('Unnamed: ') or x == 'Add to request')
     df = pd.read_csv(index, usecols=no_empty)
     df.to_csv(index.replace('.csv', '-cleaned.csv'), index=False)
+
+def clean_all():
+    indexes = list_indexes(write_csv=False)
+    for index in indexes:
+        index_path = os.path.join('data', '{}.csv'.format(slugify(index[0])))
+        clean_index(index_path)
