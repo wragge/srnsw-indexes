@@ -2,7 +2,11 @@
 
 This is a repository of data harvested from [NSW State Archives online indexes](https://www.records.nsw.gov.au/archives/collections-and-research/guides-and-indexes/indexes-a-z). Data from each index has been extracted from the web interface and saved as a single CSV-formatted file for easy download.
 
+See the [NSW State Archives](https://glam-workbench.github.io/nsw-state-archives/) section of the GLAM Workbench for full details of the harvesting process.
+
 The fields in each index are different. Some indexes are also linked to digitised records. In these cases, I've created a new column for the url of the digitised page.
+
+To explore the contents of the indexes, try the interactive [Index Explorer](https://mybinder.org/v2/gh/GLAM-Workbench/nsw-state-archives/master?urlpath=%2Fapps%2Findex-explorer.ipynb), live on Binder.
 
 A CSV file containing [basic details of each index](indexes.csv) has also been created. It includes the following fields:
 
